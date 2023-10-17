@@ -7,7 +7,7 @@
   "author": "Samrat Baral <samratbaral.sb@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/samratbaral/3d-portfolio"
+    "url": "git+https://github.com/samratbaral/3d-portfolio"
   },
   "keywords": [
     "three.js",
