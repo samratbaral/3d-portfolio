@@ -1,13 +1,40 @@
 {
-  "name": "portfolio",
-  "private": true,
-  "version": "0.0.0",
+  "name": "3d-portfolio",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
+  "description": "Personal Website V4",
+  "author": "Samrat Baral <samratbaral.sb@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samratbaral/3d-portfolio"
+  },
+  "keywords": [
+    "three.js",
+    "react",
+    "portfolio",
+    "personal website",
+    "3d"
+  ],
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "serve": "vite preview",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,css,json,md}": [
+      "prettier --write"
+    ],
+    "*.js": [
+      "eslint --fix"
+    ]
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -31,6 +58,8 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^6.0.0",
+    "lint-staged": "^15.0.1",
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.5"

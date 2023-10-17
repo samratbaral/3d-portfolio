@@ -26,14 +26,21 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import itlab from "./company/itlab.png";
+import senior from "./company/senior.png";
+import parkmaia from "./company/parkmaia.png";
+import uta from "./company/uta.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-import dashboard from "./dashboard.png";
-import mln from "./mln.png";
-import iot from "./iot.png";
-import secure from "./secure.png";
+import carrent from "./projects/carrent.png"; //src/assets/projects/carrent.png
+import jobit from "./projects/jobit.png";
+import tripguide from "./projects/tripguide.png";
+import dashboard from "./projects/dashboard.png";
+import mln from "./projects/mln.png";
+import iot from "./projects/iot.png";
+import secure from "./projects/secure.png";
+import shakespear from "./projects/shakespear.png";
+import poker from "./projects/poker.png";
+import supercore from "./projects/supercore.png";
+import plantways from "./projects/plantways.png";
 
 export {
   logo,
@@ -62,6 +69,9 @@ export {
   starbucks,
   tesla,
   itlab,
+  senior,
+  parkmaia,
+  uta,
   carrent,
   jobit,
   tripguide,
@@ -69,4 +79,8 @@ export {
   mln,
   iot,
   secure,
+  shakespear,
+  poker,
+  supercore,
+  plantways,
 };

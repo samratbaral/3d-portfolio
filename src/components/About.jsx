@@ -40,12 +40,12 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>About Me</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[19px] text-justify max-w-3xl leading-[30px]'
+        className='mt-10 text-secondary text-[19px] text-justify max-w-10xl leading-[30px]'
       >
        I am a senior undergraduate student majoring in Computer Science at the
         University of Texas at Arlington. An accomplished research assistant
