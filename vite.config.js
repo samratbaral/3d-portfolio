@@ -5,11 +5,11 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   base: "/3d-portfolio/",
   plugins: [react()],
-  //   resolve: {
-  //     alias: {
-  //       "@src": resolve(__dirname, "./src"),
-  //     },
-  //   },
+//   resolve: {
+//     alias: {
+//       "@src": resolve(__dirname, "./src"),
+//     },
+//   },c
   build: {
     chunkSizeWarningLimit: 1600,
     rollupOptions: {
