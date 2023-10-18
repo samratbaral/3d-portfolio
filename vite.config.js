@@ -2,17 +2,17 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 // // https://vitejs.dev/config/
-// export default defineConfig({base: "/3d-portfolio/",plugins: [react()],});
+export default defineConfig({base: "/",plugins: [react()],});
 
-export default defineConfig(({ command }) => {
-  const config = {
-    plugins: [react()],
-    base: '/3d-portfolio/',
-  }
+// export default defineConfig(({ command }) => {
+//   const config = {
+//     plugins: [react()],
+//     base: "/",
+//   };
 
-  if (command !== 'serve') {
-    config.base = '/react-vite-gh-pages/'
-  }
+//   if (command !== "serve") {
+//     config.base = "/react-vite-gh-pages/";
+//   }
 
-  return config
-})
+//   return config;
+// });
