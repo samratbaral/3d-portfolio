@@ -1,9 +1,10 @@
 {
   "name": "3d-portfolio",
+  "homepage": "https://samratbaral.github.io/3d-portfolio/",
   "private": false,
   "version": "1.0.0",
   "type": "module",
-  "description": "Personal Website V4",
+  "description": "Personal Website Version 1.0",
   "author": "Samrat Baral <samratbaral.sb@gmail.com>",
   "repository": {
     "type": "git",
@@ -19,14 +20,13 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "serve": "vite preview",
     "predeploy": "vite build",
     "deploy": "gh-pages -d dist",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "lint-staged": "lint-staged",
-    "all": "concurrently --kill others \"npm run dev\" \"npm run format\" \"npm run preview\" \"npm run deploy\"  "
+    "all": "concurrently --kill others \"npm run dev\" \"npm run format\" \"npm run deploy\"  "
   },
   "lint-staged": {
     "*.{js,css,json,md}": [

@@ -5,11 +5,6 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   base: "/3d-portfolio/",
   plugins: [react()],
-  //   resolve: {
-  //     alias: {
-  //       "@src": resolve(__dirname, "./src"),
-  //     },
-  //   },c
   build: {
     chunkSizeWarningLimit: 1600,
     rollupOptions: {
@@ -27,16 +22,3 @@ export default defineConfig({
     },
   },
 });
-
-// export default defineConfig(({ command }) => {
-//   const config = {
-//     plugins: [react()],
-//     base: "/3d-portfolio/",
-//   };
-
-//   if (command !== "serve") {
-//     config.base = "/react-vite-gh-pages/";
-//   }
-
-//   return config;
-// });
