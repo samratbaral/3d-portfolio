@@ -13,7 +13,7 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
-// import Resume from "./Resume";
+import Resume from "./Resume";
 
 export {
   Hero,
@@ -24,6 +24,7 @@ export {
   Works,
   Feedbacks,
   Contact,
+  Resume,
   CanvasLoader,
   EarthCanvas,
   BallCanvas,

@@ -5,7 +5,12 @@
   "version": "1.0.1",
   "type": "module",
   "description": "Personal Website Version 1.0.1",
-  "author": "Samrat Baral <samratbaral.sb@gmail.com>",
+  "author": {
+    "name": "Samrat Baral",
+    "email": "samratbaral.sb@gmail.com",
+    "github": "samratbaral",
+    "linkedin": "samratbaral"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/samratbaral/samratbaral.github.io"
@@ -21,10 +26,10 @@
   "scripts": {
     "dev": "vite",
     "predeploy": "vite build",
+    "preview": "vite preview",
     "deploy": "gh-pages -d dist",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
     "lint-staged": "lint-staged",
     "all": "concurrently --kill others \"npm run format\"  \"npm run deploy\"  \"npm run dev\" "
   },
@@ -40,11 +45,14 @@
     "@emailjs/browser": "^3.11.0",
     "@react-three/drei": "^9.79.4",
     "@react-three/fiber": "^8.13.5",
+    "@wojtekmaj/react-hooks": "^1.18.1",
     "framer-motion": "^10.13.1",
     "maath": "^0.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.2",
+    "react-pdf": "^7.5.1",
+    "react-router": "^6.17.0",
+    "react-router-dom": "^6.17.0",
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0",
     "three": "^0.154.0",
@@ -64,6 +72,8 @@
     "lint-staged": "^15.0.1",
     "postcss": "^8.4.27",
     "prettier": "^3.0.3",
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.3.3",
+    "vite-plugin-pages": "^0.31.0",
+    "vite-plugin-static-copy": "^0.17.0"
   }
 }

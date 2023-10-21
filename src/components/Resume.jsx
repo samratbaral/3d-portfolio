@@ -1,25 +1,25 @@
-// import React, { useState } from 'react';
-// import { Document, Page } from 'react-pdf';
+import React, { useState } from 'react';
+import { SectionWrapper } from "../hoc";
+import { Document, Page } from 'react-pdf';
 
-// function Resume() {
-//   const [numPages, setNumPages] = useState(null);
-//   const [pageNumber, setPageNumber] = useState(1);
+function Resume() {
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
 
-//   function onDocumentLoadSuccess({ numPages }) {
-//     setNumPages(numPages);
-//   }
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
+  return (
+    <div>
+      <Document
+        file="./assets/resume/Resume_Samrat_Baral.pdf"
+        onLoadSuccess={onDocumentLoadSuccess}
+      >
+        <Page pageNumber={pageNumber} />
+      </Document>
+      <p>Page {pageNumber} of {numPages}</p>
+    </div>
+  );
+}
 
-//   return (
-//     <div>
-//       <Document
-//         file="path/to/resume.pdf"
-//         onLoadSuccess={onDocumentLoadSuccess}
-//       >
-//         <Page pageNumber={pageNumber} />
-//       </Document>
-//       <p>Page {pageNumber} of {numPages}</p>
-//     </div>
-//   );
-// }
-
-// export default Resume;
+export default SectionWrapper(Resume, "resume");
